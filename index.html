@@ -14,11 +14,32 @@
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+   
+    
+    
+    <link rel="stylesheet" href="css/flaticon-skillgro.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/default-icons.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/tg-cursor.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     
-    
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="asset/career plus white.svg" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
     <!-- Body Inner -->
     <div class="toast position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header" style="background-color:orangered;">
@@ -58,8 +79,8 @@
                         <div class="container"  >
                             <nav>
                                 <ul>
-                                    <li><a href="HOMEPAGE.html">Home</a></li>
-                                    <li class="dropdown"><a href="#services">OUR SERVICES</a>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown"><a href="#services">TRAINING COURSES </a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu"><a href="WEB DEV.HTML">Web DEV</a></li>
                                             <li class="dropdown-submenu"><a href="data science.html">DATA ANALYTICS</a></li>
@@ -67,6 +88,17 @@
                                             <li class="dropdown-submenu"><a href="project management.html">PROJECT MANAGEMENT</a></li>
                                             <li class="dropdown-submenu"><a href="UI DESIGN.HTML">UI/UX DESIGN</a></li>
                                             <li class="dropdown-submenu"><a href="cloud.html">CLOUD COMPUTING</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="courses.html">CERTIFIACTION COURSES </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="aws certification.html">AMAZON WEB SERVICES (AWS)</a></li>
+                                            <li class="dropdown-submenu"><a href="data science.html">DATA ANALYTICS</a></li>
+                                            <li class="dropdown-submenu"><a href="GOOGLE CLOUD.html">GOOGLE CLOUD</a></li>
+                                            
                                             
                                             
                                         </ul>
@@ -97,7 +129,7 @@
                         <h2 class="text-medium m-t-0" style="padding-top: 20PX;">ELEVATE SKILLSET</h2>
                         <p class="lead">let us help you to upskill your journey</p>
                         <a class="btn btn-outline btn-custom-orange" href="#"  onclick="scrollToFooter()">CONTACT US</a>
-                        
+                        <a class="btn btn-outline btn-custom-orange" href="courses.html" >Certifications</a>
                     </div>
 
 
@@ -164,11 +196,12 @@
                     <div class="col-lg-6">
                         <div class="heading-text heading-section" >
                             <h2>ABOUT US</h2>
-                            <span class="lead">We are a Hyderabad-based training and development company that offers comprehensive technology skills training across domains like programming, data science, cloud computing, AI/ML, UI/UX design and project management to equip students and professionals with in-demand, real-world expertise. We provide this through innovative teaching by our industry expert trainers in flexible in-person or virtual sessions. We closely collaborate with academic institutions and corporate clients to bridge the tech skills gap and ready the next generation for the technological demands of the future. </span>
+                            <span class="lead">Career Plus is a new Venture that has started on 2024 focusing on Online training and certification program for top IT industry skills . Our certification and training programs includes in the domain of Cloud, Project Management, Big Data, Data Science & AI, Prompt Engineering, MuleSoft, DevOps, RPA, Design Thinking, Full Stack Development, Scrum Alliance, Generative AI, Data Analytics, and many other technologies which are among the most up-to-date and industry-designed skills with 24*7 dedicated support facility and at a lesser price. We assist professionals in making informed career selections, choose trainiers with over a decade of industry experience, provide extensive offering significant hands-on projects, closely monitoring student progress, and providing industry-recognized certifications.We have already conducted 32+ hours training and certification Program for upcoming IT professional and most of them are placed in top companies.
+                            </span>
                         </div>
                         <a class="btn btn-outline btn-custom-orange" href="about us .html" >ABOUT US</a>
                     </div>
-                    <div class="col-lg-6 m-t-60">
+                    <div class="col-lg-6 m-t-60" style="padding-top: 50px;">
                         <img class="responsive-image" src="asset/image.jpg" alt="Company Image">
                         <!-- <a href="https://www.freepik.com/free-photo/man-glasses-augmented-reality-blue_15668564.htm#query=TECH%20PERSON%20background&position=5&from_view=search&track=ais&uuid=cb103380-5e04-4db7-945a-2b44f0d43adc">Image by rawpixel.com</a> on Freepik -->
                     </div>
@@ -295,7 +328,7 @@
                                     <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
                                     <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>8-12 WEEKS</small>
                                 </div>
-                                <a class="h5" href="">Cloud Platforms: AWS, Azure, Google Cloud</a>
+                                <a class="h5" href="">Cloud Computing Platforms: AWS, Azure, Google Cloud</a>
                                 <div class="border-top mt-4 pt-4">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="m-0"><i class="fa fa-star text-primary mr-2" style="padding-top: 17PX;"></i>4.5 </h6>
@@ -540,6 +573,29 @@
             });
         }
     </script>
+
+<script src="js/vendor/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.odometer.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/tween-max.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="js/tg-cursor.min.js"></script>
+<script src="js/vivus.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/svg-inject.min.js"></script>
+<script src="js/jquery.circleType.js"></script>
+<script src="js/jquery.lettering.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    SVGInject(document.querySelectorAll("img.injectable"));
+</script>
         
 </body>
 
