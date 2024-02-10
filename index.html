@@ -14,7 +14,11 @@
     <!-- Stylesheets & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
     <link href="css/plugins.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     
@@ -44,34 +48,48 @@
     </div>
     <!--Preloader-end -->
     <!-- Body Inner -->
-    
+
+    <div class="popup-overlay">
+        <div class="popup-container">
+          <div class="left">
+            <img class="bg-2" src="asset/bg-2.png" alt="" />
+            <img class="bg-1" src="asset/bg-1.png" alt="" />
+            <img class="hero-image" src="asset/hero-image.png" alt="" />
+            <img
+              class="hero-image-small"
+              src="asset/hero-image-small.png"
+              alt=""
+            />
+          </div>
+  
+          <div class="right">
+            <div class="skip-button">Skip in 5s</div>
+  
+            <p class="logo" style="color: #FFD800">GET</p>
+            <h2 class="popup-heading">30% off</h2>
+            <p class="description" style="color: black;">
+                Unlock Cloud Computing basics. Learn AWS, Azure, Google Cloud. Click to explore.
+        
+                
+            </p>
+  
+            <a href="#" class="visit-button">KNOW MORE</a>
+          </div>
+        </div>
+      </div>
+
 
     <div class="toast position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="popup-container">
-            <div class="left">
-              <img class="bg-2" src="asset/bg-2.png" alt="" />
-              <img class="bg-1" src="asset/bg-1.png" alt="" />
-              <img class="hero-image" src="asset/hero-image.png" alt="" />
-              <img
-                class="hero-image-small"
-                src="asset/hero-image-small.png"
-                alt=""
-              />
-            </div>
+        <div class="toast-header" style="background-color:orangered;">
+            <strong class="me-auto">LATEST UPDATE</strong>
+            <small></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="z-index: 999;"></button>
+        </div>
+        <div class="toast-body">
     
-            <div class="right">
-              <div class="skip-button">Skip in 5s</div>
-    
-              <p class="logo">Live Blogger</p>
-              <h2 class="popup-heading">Design Course</h2>
-              <p class="description">
-                Learn to design modern types of designs using HTML and CSS. Click
-                below to view more details.
-              </p>
-    
-              <a href="#" class="visit-button">Visit Site</a>
-            </div>
-          </div>
+            JOIN OUR UPCOMING DEMO CLASS. </br><a href="#" class="join-link">CLICK HERE TO JOIN</a>
+            
+        </div>
     </div>
     
     <div class="body-inner">
@@ -120,7 +138,9 @@
                                             <li class="dropdown-submenu"><a href="GOOGLE CLOUD.html">GOOGLE CLOUD</a></li>
                                             <li class="dropdown-submenu"><a href="MuleSoft.html">MuleSoft</a></li>
                                             <li class="dropdown-submenu"><a href="RPA.html">RPA</a></li>
-                                            
+                                            <li class="dropdown-submenu"><a href="PROJECT MANAGEMENT CERTIFICATE.html">PROJECT MANAGEMENT</a></li>
+                                            <li class="dropdown-submenu"><a href="design thinking CERTIFICATE copy.html">DESIGN THINKING</a></li>
+                                            <li class="dropdown-submenu"><a href="Scrum Alliance.html">SCRUM ALLIANCE</a></li>
                                             
                                         </ul>
                                     </li>
@@ -556,7 +576,7 @@
         
         
       
-        <script src="js/toast.js"></script>
+        
         <!-- end: Footer -->
     </div>
     <!-- end: Body Inner -->
@@ -617,6 +637,7 @@
 <script>
     SVGInject(document.querySelectorAll("img.injectable"));
 </script>
+<script src="js/popup.js"></script>
         
 </body>
 

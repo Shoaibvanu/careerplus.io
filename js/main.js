@@ -476,19 +476,10 @@ if ($(".curved-circle").length) {
 
 const popupOverlay = document.querySelector(".popup-overlay");
 const skipButton = document.querySelector(".popup-container .skip-button");
-const visitButton = document.querySelector(".popup-container .visit-button");
 
 let remainingTime = 5;
-let allowedToSkip = true; // Set to true initially
+let allowedToSkip = false;
 let popupTimer;
-
-const createPopupCookie = () => {
-  let expiresDays = 30;
-  let date = new Date();
-  date.setTime(date.getTime() + expiresDays * 24 * 60 * 60 * 1000);
-  let expires = "expires=" + date.toUTCString();
-  document.cookie = `popupCookie=true; ${expires}; path=/;`;
-};
 
 const showAd = () => {
   popupOverlay.classList.add("active");
@@ -497,7 +488,7 @@ const showAd = () => {
     remainingTime--;
 
     if (remainingTime < 0) {
-      allowedToSkip = true;
+      allowedToSkip = true; // Update allowedToSkip to true when the timer is done
       skipButton.innerHTML = "Skip";
       clearInterval(popupTimer);
     }
@@ -506,7 +497,6 @@ const showAd = () => {
 
 const skipAd = () => {
   popupOverlay.classList.remove("active");
-  createPopupCookie();
 };
 
 skipButton.addEventListener("click", () => {
@@ -522,6 +512,4 @@ const startTimer = () => {
   }
 };
 
-if (!document.cookie.match(/^(.*;)?\s*popupCookie\s*=\s*[^;]+(.*)?$/)) {
-  window.addEventListener("scroll", startTimer);
-}
+window.addEventListener("scroll", startTimer);
