@@ -479,7 +479,7 @@ const skipButton = document.querySelector(".popup-container .skip-button");
 const visitButton = document.querySelector(".popup-container .visit-button");
 
 let remainingTime = 5;
-let allowedToSkip = false;
+let allowedToSkip = true; // Set to true initially
 let popupTimer;
 
 const createPopupCookie = () => {
