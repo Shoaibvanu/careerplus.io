@@ -10013,7 +10013,7 @@ blockquote > p {
   width: 100%;
   opacity: 0;
   transition: all 700ms ease;
-  z-index: 9999;
+  
 }
 
 .popup-overlay.active {
@@ -10035,14 +10035,14 @@ blockquote > p {
   opacity: 0;
   pointer-events: none;
   transition: all 700ms ease;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .popup-overlay.active .popup-container {
   transform: translate(-50%, -50%);
   opacity: 1;
   pointer-events: auto;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .popup-overlay.active .left .bg-1,
