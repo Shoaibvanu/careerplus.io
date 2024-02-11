@@ -16994,3 +16994,22 @@ h6,
     padding: 0;
   }
 }
+
+
+/* Add your styles here */
+
+.dropdown-menu.two-column-menu {
+  
+  width: 500px; /* Adjust the width as needed */
+  
+}
+
+.column {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu.two-column-menu .column li {
+  margin-bottom: 10px;
+}
