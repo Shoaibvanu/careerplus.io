@@ -480,19 +480,19 @@ Topbar
 
 #header.header-mini .header-inner #logo a, #header.header-mini .header-inner #logo a span, #header.header-mini #header-wrap #logo a, #header.header-mini #header-wrap #logo a span { font-size: 30px; }
 
-#header.header-mini .header-inner #mainMenu-trigger, #header.header-mini #header-wrap #mainMenu-trigger { height: 60px; }
+#header.header-mini .header-inner #mainMenu-trigger, #header.header-mini #header-wrap #mainMenu-trigger { height: 100px; }
 
-#header.header-mini .header-inner .header-extras, #header.header-mini #header-wrap .header-extras { height: 60px; }
+#header.header-mini .header-inner .header-extras, #header.header-mini #header-wrap .header-extras { height: 100px; }
 
-#header.header-alternative { line-height: 60px; height: 60px; }
+#header.header-alternative { line-height: 100px; height: 100px; }
 
-#header.header-alternative .header-inner, #header.header-alternative #header-wrap { height: 60px; }
+#header.header-alternative .header-inner, #header.header-alternative #header-wrap { height: 100px; }
 
 #header.header-alternative .header-inner #mainMenu > .container nav > ul > li .dropdown-submenu:before, #header.header-alternative #header-wrap #mainMenu > .container nav > ul > li .dropdown-submenu:before { top: -6px; color: black }
 
-#header.header-alternative .header-inner #logo, #header.header-alternative #header-wrap #logo { height: 60px; }
+#header.header-alternative .header-inner #logo, #header.header-alternative #header-wrap #logo { height: 100px; }
 
-#header.header-alternative .header-inner #logo a > img, #header.header-alternative #header-wrap #logo a > img { height: 60px; padding-top: 10px; padding-bottom: 10px; }
+#header.header-alternative .header-inner #logo a > img, #header.header-alternative #header-wrap #logo a > img { height: 100px; padding-top: 10px; padding-bottom: 10px; }
 
 #header.header-alternative .header-inner #mainMenu-trigger, #header.header-alternative #header-wrap #mainMenu-trigger { height: 60px; }
 
@@ -16763,10 +16763,7 @@ h6,
   z-index: 20;
 }
 
-.logo-default{
-  height: 20px;
-  width: 20px;
-}
+
 
 .mainmenu
 {
@@ -16901,12 +16898,14 @@ h6,
 .popup-container .left img {
   position: absolute;
   bottom: 0;
+  
 }
 
 .popup-container .left .bg-1 {
   left: 80px;
   transform: translateX(-20px);
   transition: all 1700ms ease;
+  height: 350PX;
 }
 
 .popup-container .left .bg-2 {
@@ -17012,4 +17011,44 @@ h6,
 
 .dropdown-menu.two-column-menu .column li {
   margin-bottom: 10px;
+}
+
+
+.logo-default{
+  size: 100px;
+}
+
+.small{
+     font-size: 12px;
+}
+
+.flaticon-angle-right {
+  height: 300PXpx; /* Adjust the height as needed */
+  /* You may also need to adjust the width property to maintain the aspect ratio */
+  /* width: auto; */
+}
+
+
+.popup-container .left .hero-image {
+  left: 18px;
+  height: 300PX;
+  transform: translateX(-20px);
+  transition: all 1700ms ease;
+  transition-delay: 600ms;
+  width: 230PX;
+}
+
+.popup-container .left .bg-1 {
+  left: 80px;
+  transform: translateX(-20px);
+  transition: all 1700ms ease;
+  height: 280PX;
+}
+
+.popup-container .left .bg-2 {
+  left: 55px;
+  transform: translateX(-20px);
+  transition: all 1700ms ease;
+  transition-delay: 600ms;
+  height: 270PX;
 }
