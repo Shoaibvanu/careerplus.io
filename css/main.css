@@ -9974,8 +9974,8 @@ blockquote > p {
   .tab-content > .active {
       /* Your alternative styles for smaller screens go here */
       width: 100%; /* Adjust as needed for responsiveness */
-      padding-left: 50px; /* Adjust as needed for responsiveness */
-      width: 397px;
+      padding-left: -20px; /* Adjust as needed for responsiveness */
+      width: 381px;
   }
 }
 
