@@ -17107,12 +17107,21 @@ h6,
 @media screen and (max-width: 767px){
   .whatsapp-icon {
     margin-top: 10px;
+    
   }
   .whatsapp_float {
-    width: 40px;
-    height: 40px;
-    bottom: 20px;
-    right: 320px;
-    font-size: 22px;
+    width: 50px; /* Adjust the button size for mobile */
+    height: 50px;
+    font-size: 24px; /* Adjust the font size for mobile */
+    bottom: 10px; /* Adjust the distance from the bottom for mobile */
+    right: 10px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .scrollTop{
+    display:none;
+  }
+
+}
+   
