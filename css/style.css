@@ -448,15 +448,15 @@ Topbar
 
 #header .header-inner, #header #header-wrap { height: 80px; background-color: #fff; /*         backface-visibility: hidden; -webkit-backface-visibility: hidden; */ left: 0; right: 0; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; /*logo*/ }
 
-#header .header-inner #logo, #header #header-wrap #logo { float: left; font-size: 28px; position: relative; z-index: 1; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; height: 80px; }
+#header .header-inner #logo, #header #header-wrap #logo { float: left; font-size: 50px; position: relative; z-index: 1; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; height: 80px; }
 
-#header .header-inner #logo a > img, #header #header-wrap #logo a > img { vertical-align: inherit; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; height: 80px; width: auto; }
+#header .header-inner #logo a > img, #header #header-wrap #logo a > img { vertical-align: inherit; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; height: 80px; width: auto; size: 50PX;}
 
-#header .header-inner #logo a > img, #header .header-inner #logo a [class*="logo-"], #header #header-wrap #logo a > img, #header #header-wrap #logo a [class*="logo-"] { display: none; padding-top: 20PX; }
+#header .header-inner #logo a > img, #header .header-inner #logo a [class*="logo-"], #header #header-wrap #logo a > img, #header #header-wrap #logo a [class*="logo-"] { display: none; padding-top: 16PX; }
 
 #header .header-inner #logo a .logo-default, #header #header-wrap #logo a .logo-default { display: block; }
 
-#header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a, #header #header-wrap #logo a span { font-family: inherit; font-size: 40px; color: #1e2022; font-weight: 800; letter-spacing: 1.5px; }
+#header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a, #header #header-wrap #logo a span { font-family: inherit; font-size: 50px; color: #1e2022; font-weight: 800; letter-spacing: 1.5px; }
 
 #header[data-fullwidth="true"] .header-inner .container, #header[data-fullwidth="true"] #header-wrap .container { max-width: 100%; padding: 0 30px; }
 
@@ -17051,4 +17051,11 @@ h6,
   transition: all 1700ms ease;
   transition-delay: 600ms;
   height: 270PX;
+}
+
+
+#logo .logo-default,
+#logo .logo-dark {
+    width: 70px;
+    height: 70px;
 }
