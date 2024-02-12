@@ -812,7 +812,7 @@ Overlay Menu
 
 /*Menu on header fullwidth */
 @media (min-width: 768px) { #header[data-fullwidth="true"] #mainMenu:not(.menu-left):not(.menu-center) nav > ul > li.mega-menu-item > .dropdown-menu { left: auto; right: 0; }
-  #header[data-fullwidth="true"] #mainMenu.menu-center nav > ul > li.mega-menu-item > .dropdown-menu { right: auto; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
+  #header[data-fullwidth="true"] #mainMenu.menu-center nav > ul > li.mega-menu-item > .dropdown-menu { right: auto; left: 20%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
 
 /* ----------------------------------------------------------------
 Main menu - Vertical
@@ -877,7 +877,7 @@ Main menu - Vertical
 
 #mainMenu.menu-vertical:not(.menu-overlay).menu-left nav { margin-left: 0; }
 
-#mainMenu-trigger { position: absolute; opacity: 0; visibility: hidden; height: 80px; z-index: 1; float: right; }
+#mainMenu-trigger { position: absolute; opacity: 0; visibility: hidden; height: 80px; z-index: 1; float: right; display: flex;}
 
 #mainMenu-trigger button { background: none; border: 0; padding: 0; }
 
@@ -17058,4 +17058,29 @@ h6,
 #logo .logo-dark {
     width: 70px;
     height: 70px;
+}
+
+
+@media (max-width: 767.98px) {
+  .certdrop {
+    margin-left: -23px; /* Use margin instead of padding */
+  }
+}
+
+
+/* CSS */
+@media (max-width: 767px) {
+  .dropdown-menu {
+      width: auto !important; /* Reset width to auto */
+      max-width: none !important; /* Reset max-width to none */
+  }
+
+  .dropdown-menu > li {
+      display: block !important; /* Display list items as block elements */
+      width: 100% !important; /* Set width to 100% to stack items vertically */
+  }
+
+  .dropdown-menu > li > ul {
+      display: none !important; /* Hide submenus */
+  }
 }
