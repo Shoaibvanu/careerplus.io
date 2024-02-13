@@ -16714,14 +16714,12 @@ h6,
 
 
 /* Media query for screens smaller than 600 pixels */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .responsive-image {
-      height: 300px;
-      width: 497px;
-      padding-right: 150PX;
+    width: 1000px; /* Set the desired width */
+    height: auto; /* Ensure height adjusts proportionally */
   }
 }
-
 @media screen and (max-width: 768px) {
   .description h2 {
       font-size: 20px; 
@@ -17114,7 +17112,7 @@ h6,
     height: 50px;
     font-size: 24px; /* Adjust the font size for mobile */
     bottom: 10px; /* Adjust the distance from the bottom for mobile */
-    right: 10px;
+    right: 300px;
   }
 }
 
