@@ -17124,4 +17124,16 @@ h6,
   }
 
 }
-   
+
+@media only screen and (max-width: 767px) {
+  #bottompart {
+      padding-left: 0;
+      padding-top: 10px; /* Adjust as needed */
+      display: flex;
+      flex-direction: column;
+  }
+
+  #bottompart li {
+      margin-left: -150px; /* Adjust as needed */
+  }
+}
