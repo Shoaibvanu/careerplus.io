@@ -2455,7 +2455,7 @@ body.breakpoint-sm .col-3 .flickr-widget img .widget-instagram img { width: 16.6
 /* ----------------------------------------------------------------
 Scroll top
 -----------------------------------------------------------------*/
-#scrollTop { z-index: -1; opacity: 0; position: fixed; text-align: center; line-height: 12px !important; right: 26px; bottom: 0; color: #fff; cursor: pointer; border-radius: 100px; height: 40px; width: 40px; background-color: rgba(0, 0, 0, 0.25); background-repeat: no-repeat; background-position: center; -webkit-transition: opacity 0.3s, bottom 0.5s, box-shadow 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.1s linear; transition: opacity 0.3s, bottom 0.5s, box-shadow 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.1s linear; background-color: rgba(0, 0, 0, 0.25) !important; overflow: hidden; }
+#scrollTop { z-index: 4; opacity: 0; position: fixed; text-align: center; line-height: 12px !important; right: 26px; bottom: 0; color: #fff; cursor: pointer; border-radius: 100px; height: 40px; width: 40px; background-color: rgba(0, 0, 0, 0.25); background-repeat: no-repeat; background-position: center; -webkit-transition: opacity 0.3s, bottom 0.5s, box-shadow 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.1s linear; transition: opacity 0.3s, bottom 0.5s, box-shadow 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.1s linear; background-color: rgba(0, 0, 0, 0.25) !important; overflow: hidden; }
 
 #scrollTop i { line-height: 39px !important; width: 39px !important; height: 39px !important; font-size: 16px !important; top: 0px !important; left: 0px !important; text-align: center !important; position: relative; z-index: 10; background-color: transparent !important; -webkit-transform: translate(0, 0px); -ms-transform: translate(0, 0px); transform: translate(0, 0px); -webkit-transition: -webkit-transform 0.2s ease; transition: -webkit-transform 0.2s ease; transition: transform 0.2s ease; transition: transform 0.2s ease, -webkit-transform 0.2s ease; }
 
@@ -16872,6 +16872,8 @@ h6,
   transition: all 700ms ease;
   z-index: 9999;
   background-color: #EBEBEB;
+  width: 1000PX;
+  height: 430PX;
 
  
   
@@ -16916,7 +16918,8 @@ h6,
 .popup-container .right {
   width: 540px;
   padding: 16px;
-  padding-left: 250px;
+  padding-left: 100px;
+  margin-left: -100PX;
   
 }
 
@@ -16974,8 +16977,11 @@ h6,
 
   .popup-container .right {
     padding: 16px;
-    width: 300px;
+   
     padding-top: 4px;
+    margin-right: 30PX;
+    padding-left: 200PX;
+
   }
 
   .popup-container .left .hero-image-small {
@@ -16989,6 +16995,8 @@ h6,
 
   .popup-container {
     padding: 0;
+    width: 400PX;
+    height: fit-content;
   }
 }
 
@@ -17029,11 +17037,14 @@ h6,
 
 .popup-container .left .hero-image {
   left: 18px;
-  height: 300PX;
-  transform: translateX(-20px);
+  
+  transform: translateY();
   transition: all 1700ms ease;
   transition-delay: 600ms;
-  width: 230PX;
+  width:500PX;
+  height: 430PX;
+  margin-left: -20PX;
+  
 }
 
 .popup-container .left .bg-1 {
@@ -17095,7 +17106,8 @@ h6,
   text-align: center;
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  z-index: 2;
+ 
 }
 .whatsapp-icon {
   margin-top: 16px;
@@ -17135,3 +17147,6 @@ h6,
       margin-left: -150px; /* Adjust as needed */
   }
 }
+
+
+
