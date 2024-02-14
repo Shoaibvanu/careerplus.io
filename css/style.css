@@ -17117,6 +17117,7 @@ h6,
 @media screen and (max-width: 767px){
   .whatsapp-icon {
     margin-top: 10px;
+    display: none;
     
   }
   .whatsapp_float {
@@ -17125,6 +17126,7 @@ h6,
     font-size: 24px; /* Adjust the font size for mobile */
     bottom: 10px; /* Adjust the distance from the bottom for mobile */
     right: 300px;
+    display: none;
   }
 }
 
