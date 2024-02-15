@@ -496,3 +496,6 @@ const startTimer = () => {
 
 window.addEventListener("scroll", startTimer);
 
+
+
+
