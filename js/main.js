@@ -497,5 +497,6 @@ const startTimer = () => {
 window.addEventListener("scroll", startTimer);
 
 
+// Get the container and content width
 
 
