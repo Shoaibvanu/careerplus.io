@@ -17223,10 +17223,10 @@ h6,
 
   @keyframes scroll {
     0% {
-      transform: translateX(100%);
+      transform: translateX(00%);
     }
     100% {
-      transform: translateX(-100%); 
+      transform: translateX(-50%); 
     }
   }
 }
