@@ -17178,8 +17178,36 @@ h6,
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .news-container {
-      display: none;
+@media screen and (max-width: 768px) {
+  .news-container .title {
+    
+    font-size: 14px;
+  }
+
+  .news-container ul li {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .news-container ul{
+    animation: scroll 15s infinite linear;
+    width: max-content;
+  }
+
+  @keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+  
+    to {
+        transform: translateX(-200px);
+  
+    }
+  }
+  
+
 }
+
+
+
 
