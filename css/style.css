@@ -17226,7 +17226,7 @@ h6,
       transform: translateX(00%);
     }
     100% {
-      transform: translateX(calc(-100% - 100vw)); 
+      transform: translateX(-50%); 
     }
   }
 }
