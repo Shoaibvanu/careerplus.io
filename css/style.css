@@ -17180,56 +17180,45 @@ h6,
 
 @media screen and (max-width: 768px) {
   .news-container .title {
-    padding: 0 12px;
-    font-size: 14px;
-  }
-
-  .news-container ul li {
+    position: static;
+    background: #1A09D7;
+    height: auto;
+    display: block;
     padding: 5px 12px;
-    font-size: 12px;
+    text-align: center;
+    font-size: 12px; 
   }
 
   .news-container ul {
-    animation: scroll 15s infinite linear;
-    white-space: nowrap; /* Ensure the text does not wrap */
-    overflow: hidden; /* Hide any overflowing content */
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    animation: none;
+    ;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%); /* Start off-screen to the right */
-    }
-    100% {
-      transform: translateX(-100%); /* Scroll to off-screen to the left */
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .news-container .title {
-    padding: 0 12px;
+  .news-container ul li {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    border-right: 1px solid #b8b8b8;
     font-size: 10px;
   }
 
-  .news-container ul li {
-    padding: 5px 12px;
-    font-size: 5px;
+  .news-container ul li:last-child {
+    border-right: none;
   }
 
-  .news-container ul {
-    animation: scroll 15s infinite linear;
-    white-space: nowrap;
-    overflow: hidden; 
+  .news-container ul li::after {
+    display: none;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(00%);
-    }
-    100% {
-      transform: translateX(-50%); 
-    }
-  }
+  
 }
+
+
+
+
 
 
 
