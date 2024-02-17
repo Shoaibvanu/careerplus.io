@@ -17179,6 +17179,9 @@ h6,
 }
 
 @media screen and (max-width: 768px) {
+  .news-container{
+    overflow: hidden;
+  }
   .news-container .title {
     padding: 0 12px;
     font-size: 14px;
@@ -17188,21 +17191,23 @@ h6,
     padding: 5px 12px;
     font-size: 12px;
     overflow: hidden;
+    
   }
 
   .news-container ul {
-    white-space: nowrap; /* Ensure the text does not wrap */
-    overflow: hidden; /* Hide any overflowing content */
-    width: max-content; /* Set the width to the content width */
-    animation: scroll 15s infinite linear; /* Start scrolling immediately */
-    animation-delay: 0; /* No delay before starting the animation */
-    transform: translateX(100%); /* Start off-screen to the right */
-    transition: transform 25s linear; /* Use transition instead of animation */
+    animation: scroll 15s infinite linear;
+    width: max-content;
+    overflow: hidden;
   }
+  
 
   @keyframes scroll {
-    100% {
-      transform: translateX(-100%); /* Scroll to off-screen to the left */
+    from {
+      transform: translateX(40%);
+    }
+
+    to {
+      transform: translateX(-100%); /* Adjust this value to reduce the text reappearing */
     }
   }
 }
