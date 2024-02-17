@@ -17203,7 +17203,7 @@ h6,
 
   @keyframes scroll {
     from {
-      transform: translateX(33%);
+      transform: translateX(40%);
     }
 
     to {
