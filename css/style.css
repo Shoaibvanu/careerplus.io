@@ -17195,7 +17195,7 @@ h6,
   }
 
   .news-container ul {
-    animation: scroll 15s infinite linear;
+    animation: scroll 12s infinite linear;
     width: max-content;
     overflow: hidden;
   }
@@ -17203,7 +17203,7 @@ h6,
 
   @keyframes scroll {
     from {
-      transform: translateX(40%);
+      transform: translateX(33%);
     }
 
     to {
