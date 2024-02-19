@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+     
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
@@ -11,6 +13,11 @@
   <loc>https://careersplus.in/</loc>
   <lastmod>2024-02-19T07:44:48+00:00</lastmod>
   <priority>1.00</priority>
+  <image:image>
+    <image:loc>https://careersplus.in/asset/career plus dark.svg</image:loc>
+    <image:title>Your Logo</image:title>
+    
+  </image:image>
 </url>
 <url>
   <loc>https://careersplus.in/index.html</loc>
