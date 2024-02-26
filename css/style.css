@@ -17214,6 +17214,17 @@ h6,
 
 
 
+@media (max-width: 768px) {
+  #CERTIFICATE {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}
+
+
+
 
 
 
